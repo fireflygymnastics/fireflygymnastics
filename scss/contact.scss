@@ -1,0 +1,44 @@
+@import '_main';
+
+main {
+    padding: 1em;
+
+    img {
+        width: 50%;
+        border-radius: 50%;
+        display: block;
+        margin: 1em auto;
+    }
+
+    p {
+        color: white;
+        font-size: 1.25em;
+        i {
+            margin: 0.25em 1em 0.25em 0;
+        }
+        a {
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 25% 70%;
+        grid-column-gap: 5%;
+        grid-template-rows: 1fr 4fr;
+
+        img {
+            grid-column: 1;
+            grid-row: 2;
+            width: 75%;
+        }
+
+        div {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 3em;
+        }
+    }
+}

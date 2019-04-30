@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Averia+Libre");
+@import url("https://fonts.googleapis.com/css?family=Montez");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #14143C; }
+
+h1 {
+  font-family: 'Averia Libre', cursive;
+  color: #63E1AA;
+  font-size: 3em; }
+
+h2 {
+  font-family: 'Montez', cursive;
+  color: #D59463;
+  font-size: 2em;
+  margin-bottom: 0.5em; }
+
+h3 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #326769;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.25em; }
+
+p {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: white; }
+
+header {
+  overflow: hidden;
+  position: relative; }
+  header nav {
+    display: none;
+    background-color: #6A524E; }
+  header #logo {
+    padding: 0;
+    max-width: 100%; }
+  header .icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  header a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block; }
+    header a:hover {
+      background-color: #ddd;
+      color: black; }
+
+@media only screen and (min-width: 992px) {
+  body {
+    display: grid;
+    grid-template-columns: 15% 85%; }
+
+  h1 {
+    margin: 0.5em; }
+
+  header {
+    overflow: initial;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    grid-column: 1; }
+    header nav {
+      display: block; }
+    header .icon {
+      display: none; }
+
+  main {
+    grid-column: 2; } }
+main {
+  padding: 1em; }
+  main #title {
+    display: none; }
+  main section {
+    margin: 1.25em 0; }
+    main section:nth-of-type(1) {
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 1.5;
+      margin: 0 2em; }
+    main section#gym figure img {
+      width: 100%; }
+    main section#gym figure figcaption {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      color: white; }
+    main section#events p {
+      margin-left: 1em; }
+
+@media only screen and (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 5%; }
+    main #title {
+      grid-column: 1 / span 2;
+      display: block;
+      text-align: center; }
+      main #title p {
+        color: #D59463;
+        font-size: 1.5em;
+        margin: 1em 0; }
+    main section:nth-of-type(1) {
+      grid-column: 1 / span 2; }
+    main section#gym {
+      grid-column: 1; }
+    main section#events {
+      grid-column: 2; } }
+
+/*# sourceMappingURL=home.css.map */

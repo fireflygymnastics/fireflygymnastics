@@ -1,0 +1,110 @@
+// Reset
+@import "_reset";
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Averia+Libre');
+@import url('https://fonts.googleapis.com/css?family=Montez');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+// Colors
+$primary: #63E1AA;
+$secondary: #D59463;
+$tertiary: #14143C;
+$accent1: #6A524E;
+$accent2: #326769;
+
+body {
+    background-color: $tertiary;
+}
+
+h1 {
+    font-family: 'Averia Libre', cursive;
+    color: $primary;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Montez', cursive;
+    color: $secondary;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: $accent2;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+p {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+
+    nav {
+        display: none;
+        background-color: $accent1;
+    }
+
+
+    #logo {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+
+    h1 {
+        margin: 0.5em;
+    }
+
+    header {
+        overflow: initial;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        grid-column: 1;
+
+        nav {
+            display: block;
+        }
+
+        .icon {
+            display: none;
+        }
+    }
+
+    main {
+        grid-column: 2;
+    }
+}
